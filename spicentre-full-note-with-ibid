@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" demote-non-dropping-particle="never" default-locale="fr-FR">
   <info>
-    <title>ISO-690 (note, no abstract, opcit, French)</title>
-    <id>http://www.zotero.org/styles/spi-full-note-with-ibid</id>
-    <link href="http://www.zotero.org/styles/spi-full-note-with-ibid" rel="self"/>
+    <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (full note, with Ibid.)</title>
+    <id>http://www.zotero.org/styles/spicentre-full-note-with-ibid</id>
+    <link href="http://www.zotero.org/styles/spicentre-full-note-with-ibid" rel="self"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
