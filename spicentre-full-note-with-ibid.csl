@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" demote-non-dropping-particle="never" default-locale="fr-FR">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (full note, with Ibid.)</title>
     <id>http://www.zotero.org/styles/spicentre-full-note-with-ibid</id>
@@ -12,7 +11,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style basé sur la norme ISO 690 avec note et bibliographie et adapté aux usages de l'inventaire du patrimoine de la région Centre-Val de Loire, dérivé du style ISO-690 de Mathieu Saby.</summary>
-    <updated>2018-06-16T20:09:43+00:00</updated>
+    <updated>2018-06-16T20:25:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -573,7 +572,7 @@
       <key macro="responsability"/>
       <key macro="title"/>
     </sort>
-    <layout>
+    <layout suffix=".">
       <text macro="complete-reference"/>
     </layout>
   </bibliography>
