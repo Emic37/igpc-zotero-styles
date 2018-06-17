@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR">
+<style class="in-text" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR" xmlns="http://purl.org/net/xbiblio/csl">
   <info>
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (author-date)</title>
     <id>http://www.zotero.org/styles/spicentre-author-date</id>
@@ -12,7 +12,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-17T12:59:56+00:00</updated>
+    <updated>2018-06-17T13:26:33+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
