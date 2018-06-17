@@ -4,11 +4,12 @@ Ce jeu de styles basé sur la norme ISO-690 et dérivé des styles de Mathieu Sa
 
 
 ## Description des styles
-Le style "note" est le plus fidèle aux prescriptions du Ministère. Bibliographie et appareil de notes respectent en tous points les normes décrites : les références de la bibliographie prennent la forme 
+Les styles *note*, avec ou sans le support des abbréviations de type `ibid`, `op. cit.` et `art. cit.`, sont les plus fidèles aux prescriptions du Ministère. Bibliographie et appareil de notes respectent en tous points les normes décrites : les références de la bibliographie prennent la forme :
 > AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN.
-tandis que les références en note de bas de page seront largement abrégées pour prendre la forme 
+
+tandis que les références en note de bas de page seront largement abrégées pour prendre la forme :
 > AUTEUR, I., année, p. xxx.
 
-Les variantes "full note", avec ou sans le support des abbréviations de type "ibid", "op. cit." et "art. cit.", se différencient de ce premier style par l'affichage de références complètes (non abrégées...) en notes de bas de page. Les références prendront alors la même forme que celles de la bibliographie, à savoir : 
+Les variantes "full note" se différencient des styles *note* par l'affichage de références complètes (non abrégées...) en notes de bas de page. Les références prendront alors la même forme que celles de la bibliographie, à savoir : 
 
 > AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN.
