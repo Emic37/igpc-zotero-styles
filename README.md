@@ -4,10 +4,6 @@ Ce jeu de styles basé sur la norme ISO-690 et dérivé des styles de Mathieu Sa
 
 
 ## Avant-propos
-
-Les styles CSL différencient les styles de bibliographie et de citation. Tous les styles proposés ici respectent les prescriptions techniques 
-
-
 Le style "note" est le plus fidèle aux prescriptions du Ministère. Bibliographie et appareil de notes respectent en tous points les prescriptions citées. De fait, les références de la bibliographie prennent la forme 
 
     AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN
