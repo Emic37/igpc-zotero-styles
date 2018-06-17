@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (note)</title>
     <id>http://www.zotero.org/styles/spicentre-note</id>
@@ -12,7 +11,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-16T16:08:00+00:00</updated>
+    <updated>2018-06-17T10:54:52+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -73,6 +72,32 @@
         <name-part name="given"/>
       </name>
     </names>
+  </macro>
+  <macro name="responsability-citation">
+    <choose>
+      <if type="patent" match="any"/>
+      <else-if match="any" variable="author editor">
+        <choose>
+          <if match="any" variable="author">
+            <names variable="author">
+              <name delimiter-precedes-last="never" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" initialize-with="." name-as-sort-order="all">
+                <name-part name="family" text-case="uppercase"/>
+                <name-part name="given"/>
+              </name>
+            </names>
+          </if>
+          <else-if match="any" variable="editor">
+            <names variable="editor">
+              <name and="text" delimiter-precedes-last="never" initialize-with="." name-as-sort-order="all">
+                <name-part name="family" text-case="uppercase"/>
+                <name-part name="given"/>
+              </name>
+              <label form="short" prefix=" (" suffix=".)"/>
+            </names>
+          </else-if>
+        </choose>
+      </else-if>
+    </choose>
   </macro>
   <macro name="secondary-responsability">
     <choose>
@@ -469,36 +494,16 @@
     <text variable="note" text-case="capitalize-first"/>
   </macro>
   <macro name="citation-reference">
-    <group delimiter=". ">
-      <text macro="responsability"/>
-      <group delimiter=" ">
-        <group delimiter=". ">
-          <text macro="title"/>
-          <text macro="volume"/>
-        </group>
-        <text macro="medium_designation"/>
-      </group>
-      <text macro="thesis-report-genre"/>
-      <text macro="edition"/>
+    <group delimiter=", ">
+      <text macro="responsability-citation"/>
       <group delimiter=", ">
-        <group delimiter=". ">
-          <group delimiter=" : ">
-            <text macro="publisher-place"/>
-            <text macro="publisher"/>
-          </group>
-          <text macro="number"/>
-        </group>
         <group delimiter=", ">
           <group>
             <text macro="date"/>
-            <text macro="accessed"/>
           </group>
           <text macro="numberOfVolumes"/>
-          <text macro="issue-pagination-locator"/>
         </group>
       </group>
-      <text macro="isbn"/>
-      <text macro="access"/>
       <text macro="note"/>
     </group>
   </macro>
@@ -553,3 +558,4 @@
     </layout>
   </bibliography>
 </style>
+
