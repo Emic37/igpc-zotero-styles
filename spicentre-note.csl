@@ -11,7 +11,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-17T11:24:44+00:00</updated>
+    <updated>2018-06-17T12:17:41+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -21,6 +21,9 @@
       <term name="accessed">consulté le</term>
       <term name="available at">disponible à</term>
       <term name="editor" form="short">dir.</term>
+      <term name="issue" form="short">n°</term>
+      <term name="collection-number">numéro</term>
+      <term name="collection-number" form="short">n°</term>
     </terms>
   </locale>
   <macro name="author">
@@ -404,7 +407,10 @@
   <macro name="collection">
     <group delimiter=" ; " prefix="(" suffix=")">
       <text variable="collection-title"/>
-      <text variable="collection-number" prefix="n° "/>
+      <group delimiter=" ">
+        <text term="collection-number" form="short"/>
+        <text variable="collection-number"/>
+      </group>
     </group>
   </macro>
   <macro name="issue-pagination-locator">
