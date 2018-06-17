@@ -4,7 +4,7 @@
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (note)</title>
     <id>http://www.zotero.org/styles/spicentre-note</id>
     <link href="http://www.zotero.org/styles/spicentre-note" rel="self"/>
-    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>    
+    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
@@ -12,7 +12,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-17T12:17:41+00:00</updated>
+    <updated>2018-06-17T13:04:31+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -504,18 +504,19 @@
     <group delimiter=", ">
       <text macro="responsability-citation"/>
       <group delimiter=", ">
-        <group delimiter=", ">
-          <group>
-            <choose>
-              <if match="none" variable="author editor">
-                <text macro="title"/>
-              </if>
-            </choose>
-          </group>
-          <text macro="date"/>
-          <text macro="volume"/>
-          <text macro="locator"/>
+        <group>
+          <choose>
+            <if match="none" variable="author editor">
+              <text macro="title"/>
+            </if>
+            <else-if match="any" disambiguate="true">
+              <text macro="title"/>
+            </else-if>
+          </choose>
         </group>
+        <text macro="date"/>
+        <text macro="volume"/>
+        <text macro="locator"/>
       </group>
       <text macro="note"/>
     </group>
@@ -562,7 +563,7 @@
       <text variable="locator"/>
     </group>
   </macro>
-  <citation et-al-min="4" et-al-use-first="3">
+  <citation et-al-min="4" et-al-use-first="1" disambiguate-add-givenname="true">
     <layout suffix="." delimiter=" ; ">
       <text macro="citation-reference"/>
     </layout>
