@@ -10,8 +10,10 @@ Les styles *note*, avec ou sans le support des abbréviations de type `ibid`, `o
 ... tandis que les références en note de bas de page seront largement abrégées pour prendre la forme :
 > AUTEUR, I., année, p. xxx.
 
+
 Les variantes de type *full note* se différencient des styles précédents par l'affichage de références complètes (non abrégées donc...) en notes de bas de page. Les références prendront alors la même forme que celles de la bibliographie, soit : 
 > AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN.
+
 
 Enfin, le style de type *author-date* se différencie des styles précédents par un appareil de note dans le corps de texte sous la forme :
 > AUTEUR, I., année, p. xxx.
