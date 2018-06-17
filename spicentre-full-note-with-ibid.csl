@@ -383,9 +383,12 @@
     </choose>
   </macro>
   <macro name="collection">
-    <group delimiter=", " prefix="(" suffix=")">
+    <group delimiter=" ; " prefix="(" suffix=")">
       <text variable="collection-title"/>
-      <text variable="collection-number" prefix="n° "/>
+      <group delimiter=" ">
+        <text term="collection-number" form="short"/>
+        <text variable="collection-number"/>
+      </group>
     </group>
   </macro>
   <macro name="locator">
