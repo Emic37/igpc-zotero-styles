@@ -4,6 +4,7 @@
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (note)</title>
     <id>http://www.zotero.org/styles/spicentre-note</id>
     <link href="http://www.zotero.org/styles/spicentre-note" rel="self"/>
+    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>    
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
