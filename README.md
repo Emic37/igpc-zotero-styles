@@ -1,6 +1,6 @@
 # Nouveaux styles CSL pour l'inventaire du patrimoine
 
-Ce projet contient un jeu de styles basés sur la norme ISO-690 et dérivés des styles de [Mathieu Saby](https://github.com/msaby/wip-zotero-styles). Ces styles ont été développés et adaptés pour répondre aux besoins et usages de l'inventaire du patrimoine de la région Centre-Val de Loire en suivant au mieux les [prescriptions techniques pour la constitution de références bibliographiques] du Ministère (http://www.culture.gouv.fr/culture/dp/inventaire/extranetIGPC/normes/constit_normesbiblio.pdf).
+Ce projet contient un jeu de styles dérivés de ceux de [Mathieu Saby](https://github.com/msaby/wip-zotero-styles). Basés sur la norme ISO-690, ils ont été adaptés pour répondre aux besoins de l'inventaire du patrimoine de la région Centre-Val de Loire en suivant au mieux les [prescriptions techniques pour la constitution de références bibliographiques] du Ministère (http://www.culture.gouv.fr/culture/dp/inventaire/extranetIGPC/normes/constit_normesbiblio.pdf).
 
 
 ## Présentation des styles
