@@ -25,6 +25,9 @@
         <single>dir.</single>
         <multiple>dir.</multiple>
       </term>
+      <term name="issue" form="short">n°</term>
+      <term name="collection-number">numéro</term>
+      <term name="collection-number" form="short">n°</term>
     </terms>
   </locale>
   <macro name="author">
