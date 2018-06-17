@@ -11,7 +11,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-17T10:54:52+00:00</updated>
+    <updated>2018-06-17T11:24:44+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -499,9 +499,15 @@
       <group delimiter=", ">
         <group delimiter=", ">
           <group>
-            <text macro="date"/>
+            <choose>
+              <if match="none" variable="author editor">
+                <text macro="title"/>
+              </if>
+            </choose>
           </group>
-          <text macro="numberOfVolumes"/>
+          <text macro="date"/>
+          <text macro="volume"/>
+          <text macro="locator"/>
         </group>
       </group>
       <text macro="note"/>
@@ -541,6 +547,12 @@
       <text macro="isbn"/>
       <text macro="access"/>
       <text macro="note"/>
+    </group>
+  </macro>
+  <macro name="locator">
+    <group delimiter=" ">
+      <label variable="locator" form="short"/>
+      <text variable="locator"/>
     </group>
   </macro>
   <citation et-al-min="4" et-al-use-first="3">
