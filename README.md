@@ -4,18 +4,19 @@ Ce projet contient un jeu de styles dérivés de ceux de [Mathieu Saby](https://
 
 
 ## Présentation des styles
+
 Les styles *note*, avec ou sans le support des abbréviations de type `ibid`, `op. cit.` et `art. cit.`, sont les plus fidèles aux prescriptions du Ministère. Bibliographie et appareil de notes respectent en tous points les normes décrites. Les références de la bibliographie prennent la forme :
 > AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN.
 
 ... tandis que les références en note de bas de page seront largement abrégées pour prendre la forme :
 > AUTEUR, I., année, p. xxx.
 
+Le style de type *author-date* affiche les références de manière identique, à la différence près que l'appreil de note est inséré dans le corps du texte.
 
-Les variantes de type *full note* se différencient des styles précédents par l'affichage de références complètes (non abrégées donc...) en notes de bas de page. Les références prendront alors la même forme que celles de la bibliographie, soit : 
+Enfin, les variantes de type *full note* se différencient par l'affichage de références complètes (non abrégées donc...) en notes de bas de page. Les références prendront alors la même forme que celles de la bibliographie, soit : 
 > AUTEUR. **Titre**. Édition. Adresse et année de publication. Collation. Notes. ISBN.
 
 
-Enfin, le style de type *author-date* se différencie des styles précédents par un appareil de note dans le corps de texte sous la forme :
-> AUTEUR, I., année, p. xxx.
-
 ## Usages
+
+Ces styles s'utilisent de manière tout à fait classique. Point particulier pour les catalogues d'exposition et les archives... 
