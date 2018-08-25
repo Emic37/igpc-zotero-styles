@@ -6,6 +6,7 @@
     <id>http://www.zotero.org/styles/spicentre-author-date</id>
     <link href="http://www.zotero.org/styles/spicentre-author-date" rel="self"/>
     <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
+    <link href="http://www.zotero.org/styles/iso690-author-date-fr" rel="template"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
