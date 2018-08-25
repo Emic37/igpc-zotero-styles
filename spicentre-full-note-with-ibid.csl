@@ -14,7 +14,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style basé sur la norme ISO 690 avec note et bibliographie et adapté aux usages de l'inventaire du patrimoine de la région Centre-Val de Loire, dérivé du style ISO-690 de Mathieu Saby.</summary>
-    <updated>2018-08-25T16:33:36+00:00</updated>
+    <updated>2018-08-25T16:58:15+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -298,7 +298,7 @@
         <choose>
           <if type="article article-journal article-magazine">
             <date variable="issued">
-              <date-part name="month" text-case="sentence" suffix=" "/>
+              <date-part name="month" text-case="capitalize-first" suffix=" "/>
               <date-part name="year" form="long"/>
             </date>
           </if>
@@ -374,7 +374,7 @@
   <macro name="accessed">
     <choose>
       <if variable="URL">
-        <group delimiter=" " prefix=" [" suffix="]">
+        <group delimiter=" " prefix="[" suffix="]">
           <text term="accessed"/>
           <date form="text" variable="accessed">
             <date-part name="day" form="ordinal"/>
@@ -537,7 +537,7 @@
           <text macro="number"/>
         </group>
         <group delimiter=", ">
-          <group>
+          <group delimiter=" ">
             <text macro="date"/>
             <text macro="accessed"/>
           </group>
