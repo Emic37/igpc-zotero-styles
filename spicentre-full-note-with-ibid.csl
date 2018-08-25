@@ -14,7 +14,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style basé sur la norme ISO 690 avec note et bibliographie et adapté aux usages de l'inventaire du patrimoine de la région Centre-Val de Loire, dérivé du style ISO-690 de Mathieu Saby.</summary>
-    <updated>2018-08-25T14:25:03+00:00</updated>
+    <updated>2018-08-25T15:32:18+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -115,12 +115,12 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast" match="any">
+      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast entry-encyclopedia" match="any">
         <choose>
           <if variable="container-title">
             <text variable="title" font-weight="bold" suffix=". "/>
             <choose>
-              <if type="article-journal article-magazine article-newspaper" match="none">
+              <if type="article-journal article-magazine article-newspaper entry-dictionary entry-encyclopedia" match="none">
                 <text term="in" text-case="capitalize-first" suffix=" : "/>
               </if>
             </choose>
@@ -337,7 +337,7 @@
             <text variable="publisher-place"/>
           </if>
           <else>
-            <text value="s. l." prefix="[" suffix="]" text-case="capitalize-first"/>
+            <text value="s.l." text-case="capitalize-first" prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
@@ -358,7 +358,7 @@
             <text variable="publisher"/>
           </if>
           <else>
-            <text value="s. n." prefix="[" suffix="]"/>
+            <text value="s.n." prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
@@ -604,3 +604,4 @@
     </layout>
   </bibliography>
 </style>
+
