@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style class="in-text" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR" xmlns="http://purl.org/net/xbiblio/csl">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR">
   <info>
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (author-date)</title>
     <title-short>IPCVL-ISO-690 (author-date)</title-short>
     <id>http://www.zotero.org/styles/spicentre-author-date</id>
     <link href="http://www.zotero.org/styles/spicentre-author-date" rel="self"/>
-    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
     <link href="http://www.zotero.org/styles/iso690-author-date-fr" rel="template"/>
+    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
@@ -14,7 +14,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-06-17T13:26:33+00:00</updated>
+    <updated>2018-08-25T14:36:59+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -496,7 +496,11 @@
           <text macro="url"/>
         </else>
       </choose>
-      <text macro="archive"/>
+      <choose>
+        <if type="article manuscript" match="any">
+          <text macro="archive"/>
+        </if>
+      </choose>
     </group>
   </macro>
   <macro name="note">
@@ -582,4 +586,3 @@
     </layout>
   </bibliography>
 </style>
-
