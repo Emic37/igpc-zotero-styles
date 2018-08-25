@@ -13,7 +13,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-08-25T14:42:06+00:00</updated>
+    <updated>2018-08-25T18:03:32+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -85,7 +85,7 @@
         <choose>
           <if match="any" variable="author">
             <names variable="author">
-              <name delimiter-precedes-last="never" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" initialize-with="." name-as-sort-order="all">
+              <name and="text" delimiter-precedes-last="never" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" initialize-with="." name-as-sort-order="all">
                 <name-part name="family" text-case="uppercase"/>
                 <name-part name="given"/>
               </name>
@@ -136,7 +136,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast" match="any">
+      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast entry-dictionary entry-encyclopedia" match="any">
         <choose>
           <if variable="container-title">
             <text variable="title" font-weight="bold" suffix=". "/>
@@ -508,17 +508,9 @@
   <macro name="citation-reference">
     <group delimiter=", ">
       <text macro="responsability-citation"/>
+      <text macro="citation-title"/>
       <group delimiter=", ">
-        <group>
-          <choose>
-            <if match="none" variable="author editor">
-              <text macro="title"/>
-            </if>
-            <else-if match="any" disambiguate="true">
-              <text macro="title"/>
-            </else-if>
-          </choose>
-        </group>
+        <text macro="edition"/>
         <text macro="date"/>
         <text macro="volume"/>
         <text macro="locator"/>
@@ -567,6 +559,16 @@
       <label variable="locator" form="short"/>
       <text variable="locator"/>
     </group>
+  </macro>
+  <macro name="citation-title">
+    <choose>
+      <if match="none" variable="author editor">
+        <text variable="title" font-style="italic"/>
+      </if>
+      <else-if match="any" disambiguate="true">
+        <text variable="title" font-style="italic"/>
+      </else-if>
+    </choose>
   </macro>
   <citation et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1">
     <layout suffix="." delimiter=" ; ">
