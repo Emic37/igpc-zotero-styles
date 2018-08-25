@@ -14,7 +14,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style basé sur la norme ISO 690 avec note et bibliographie et adapté aux usages de l'inventaire du patrimoine de la région Centre-Val de Loire, dérivé du style ISO-690 de Mathieu Saby.</summary>
-    <updated>2018-08-25T15:32:18+00:00</updated>
+    <updated>2018-08-25T16:33:36+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -115,12 +115,12 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast entry-encyclopedia" match="any">
+      <if type="paper-conference speech chapter article-journal article-magazine article-newspaper post-weblog post webpage broadcast entry-dictionary entry-encyclopedia" match="any">
         <choose>
           <if variable="container-title">
             <text variable="title" font-weight="bold" suffix=". "/>
             <choose>
-              <if type="article-journal article-magazine article-newspaper entry-dictionary entry-encyclopedia" match="none">
+              <if type="article-journal article-magazine article-newspaper" match="none">
                 <text term="in" text-case="capitalize-first" suffix=" : "/>
               </if>
             </choose>
@@ -296,23 +296,23 @@
     <choose>
       <if variable="issued">
         <choose>
-          <if type="article">
+          <if type="article article-journal article-magazine">
             <date variable="issued">
               <date-part name="month" text-case="sentence" suffix=" "/>
               <date-part name="year" form="long"/>
             </date>
           </if>
           <else>
-            <date variable="issued">
-              <date-part name="day" suffix=" "/>
-              <date-part name="month" form="long" suffix=" "/>
-              <date-part name="year" form="long"/>
+            <date form="text" variable="issued">
+              <date-part name="day" form="ordinal" range-delimiter=""/>
+              <date-part name="month" range-delimiter=""/>
+              <date-part name="year" range-delimiter=""/>
             </date>
           </else>
         </choose>
       </if>
       <else>
-        <text term="no date" form="short" prefix="[" suffix="]"/>
+        <text term="no date" form="short" text-case="sentence" prefix="[" suffix="]"/>
       </else>
     </choose>
   </macro>
@@ -337,7 +337,7 @@
             <text variable="publisher-place"/>
           </if>
           <else>
-            <text value="s.l." text-case="capitalize-first" prefix="[" suffix="]"/>
+            <text value="s. l." text-case="sentence" prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
@@ -358,7 +358,7 @@
             <text variable="publisher"/>
           </if>
           <else>
-            <text value="s.n." prefix="[" suffix="]"/>
+            <text value="s. n." prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
@@ -374,12 +374,12 @@
   <macro name="accessed">
     <choose>
       <if variable="URL">
-        <group prefix=" [" suffix="]">
+        <group delimiter=" " prefix=" [" suffix="]">
           <text term="accessed"/>
-          <date variable="accessed">
-            <date-part name="day" prefix=" "/>
-            <date-part name="month" prefix=" "/>
-            <date-part name="year" prefix=" "/>
+          <date form="text" variable="accessed">
+            <date-part name="day" form="ordinal"/>
+            <date-part name="month"/>
+            <date-part name="year"/>
           </date>
         </group>
       </if>
@@ -450,8 +450,8 @@
   <macro name="url">
     <choose>
       <if variable="URL">
-        <group>
-          <text term="available at" suffix=" : " text-case="capitalize-first"/>
+        <group delimiter=": ">
+          <text term="available at" text-case="capitalize-first" suffix=" "/>
           <text variable="URL" prefix="&lt;URL : " suffix="&gt;"/>
         </group>
       </if>
