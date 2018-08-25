@@ -14,7 +14,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Style based on ISO 690:2010(F), with notes and bibliography, derived from Mathieu Saby's ISO-690 style.</summary>
-    <updated>2018-08-25T14:36:59+00:00</updated>
+    <updated>2018-08-25T17:06:39+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -318,16 +318,16 @@
     <choose>
       <if variable="issued">
         <choose>
-          <if type="article">
-            <date variable="issued">
-              <date-part name="month" text-case="sentence" suffix=" "/>
+          <if type="article article-journal article-magazine">
+            <date form="text" variable="issued">
+              <date-part name="month" text-case="sentence"/>
               <date-part name="year" form="long"/>
             </date>
           </if>
           <else>
-            <date variable="issued">
-              <date-part name="day" suffix=" "/>
-              <date-part name="month" suffix=" "/>
+            <date delimiter=" " variable="issued">
+              <date-part name="day" form="ordinal"/>
+              <date-part name="month"/>
               <date-part name="year" form="long"/>
             </date>
           </else>
@@ -396,12 +396,12 @@
   <macro name="accessed">
     <choose>
       <if variable="URL">
-        <group prefix=" [" suffix="]">
+        <group delimiter=" " prefix="[" suffix="]">
           <text term="accessed"/>
-          <date variable="accessed">
-            <date-part name="day" prefix=" "/>
-            <date-part name="month" prefix=" "/>
-            <date-part name="year" prefix=" "/>
+          <date form="text" variable="accessed">
+            <date-part name="day"/>
+            <date-part name="month"/>
+            <date-part name="year"/>
           </date>
         </group>
       </if>
@@ -472,8 +472,8 @@
   <macro name="url">
     <choose>
       <if variable="URL">
-        <group>
-          <text term="available at" text-case="capitalize-first" suffix=" : "/>
+        <group delimiter=": ">
+          <text term="available at" text-case="capitalize-first" suffix=" "/>
           <text variable="URL" prefix="&lt;URL : " suffix="&gt;"/>
         </group>
       </if>
@@ -551,7 +551,7 @@
           <text macro="number"/>
         </group>
         <group delimiter=", ">
-          <group font-variant="normal">
+          <group font-variant="normal" delimiter=" ">
             <text macro="date"/>
             <text macro="accessed"/>
           </group>
@@ -586,3 +586,4 @@
     </layout>
   </bibliography>
 </style>
+
