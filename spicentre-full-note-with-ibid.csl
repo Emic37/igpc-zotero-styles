@@ -5,8 +5,8 @@
     <title-short>IPCVL-ISO-690 (full note, with Ibib.)</title-short>
     <id>http://www.zotero.org/styles/spicentre-full-note-with-ibid</id>
     <link href="http://www.zotero.org/styles/spicentre-full-note-with-ibid" rel="self"/>
-    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
     <link href="https://github.com/msaby/wip-zotero-styles/blob/master/iso690-note-opcit-fr.csl" rel="template"/>
+    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
@@ -14,7 +14,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Style basé sur la norme ISO 690 avec note et bibliographie et adapté aux usages de l'inventaire du patrimoine de la région Centre-Val de Loire, dérivé du style ISO-690 de Mathieu Saby.</summary>
-    <updated>2018-06-17T07:44:34+00:00</updated>
+    <updated>2018-08-25T14:25:03+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -474,7 +474,11 @@
           <text macro="url"/>
         </else>
       </choose>
-      <text macro="archive"/>
+      <choose>
+        <if type="manuscript article" match="any">
+          <text macro="archive"/>
+        </if>
+      </choose>
     </group>
   </macro>
   <macro name="abstract">
