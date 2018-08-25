@@ -6,6 +6,7 @@
     <id>http://www.zotero.org/styles/spicentre-full-note-with-ibid</id>
     <link href="http://www.zotero.org/styles/spicentre-full-note-with-ibid" rel="self"/>
     <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
+    <link href="https://github.com/msaby/wip-zotero-styles/blob/master/iso690-note-opcit-fr.csl" rel="template"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
