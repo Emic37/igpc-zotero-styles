@@ -6,7 +6,8 @@
     <title-short>IPCVL-ISO-690 (full note)</title-short>
     <id>http://www.zotero.org/styles/spicentre-full-note</id>
     <link href="http://www.zotero.org/styles/spicentre-full-note" rel="self"/>
-    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>    
+    <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>  
+    <link href="https://github.com/msaby/wip-zotero-styles/blob/master/iso690-note-fr.csl" rel="template"/>
     <author>
       <name>Aymeric Fassier</name>
       <email>fassier.aymeric@gmail.com</email>
