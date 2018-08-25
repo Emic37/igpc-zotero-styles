@@ -2,6 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" et-al-min="4" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" demote-non-dropping-particle="never" default-locale="fr-FR">
   <info>
     <title>Inventaire du patrimoine Centre-Val de Loire — ISO-690 (full note, with Ibid.)</title>
+    <title-short>IPCVL-ISO-690 (full note, with Ibib.)</title-short>
     <id>http://www.zotero.org/styles/spicentre-full-note-with-ibid</id>
     <link href="http://www.zotero.org/styles/spicentre-full-note-with-ibid" rel="self"/>
     <link href="https://github.com/Emic37/spi-zotero-styles" rel="documentation"/>
